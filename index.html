@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>แก้ไขซอฟต์แวร์ควบคุมหัวรีดนมวัว</title>
+    <link rel="stylesheet" href="style.css"> </head>
+<body>
+    <h1>แก้ไขซอฟต์แวร์ควบคุมหัวรีดนมวัว</h1>
+
+    <label for="cowIdInput">รหัสวัว:</label>
+    <input type="text" id="cowIdInput">
+    <button onclick="processCowId()">ตรวจสอบ</button>
+
+    <div id="result" style="display: none;">
+        <h2>ผลการผลิตนม</h2>
+        <p>รหัสวัว: <span id="cowIdResult"></span></p>
+        <p>พันธุ์: <span id="cowColorResult"></span></p>
+        <p>อายุ: <span id="cowAgeResult"></span></p>
+        <p>นมที่ผลิตได้: <span id="milkYieldResult"></span> ลิตร</p>
+        <p>นมรวมทั้งหมด: <span id="totalMilkYieldResult"></span> ลิตร</p>
+    </div>
+
+    <div id="error" style="display: none; color: red;"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
